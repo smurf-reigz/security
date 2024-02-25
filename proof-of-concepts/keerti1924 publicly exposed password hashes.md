@@ -1,7 +1,7 @@
 ## Vulnerability Details
 
 **Credits**: Reigz Macolor (https://github.com/reigz/)<br/>
-**Tested On**: PHP-MYSQL-User-Login-System <https://github.com/keerti1924/PHP-MYSQL-User-Login-System>
+**Tested On**: PHP-MYSQL-User-Login-System <https://github.com/keerti1924/PHP-MYSQL-User-Login-System><br/>
 **Affected Version**: keerti1924/PHP-MYSQL-User-Login-System 1.0
 
 **Affected Site Page**: *<br/>

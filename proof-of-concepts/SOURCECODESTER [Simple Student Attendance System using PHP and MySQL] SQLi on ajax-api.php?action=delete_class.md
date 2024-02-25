@@ -33,7 +33,7 @@ public function delete_class(){
 > [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)
 
 ## **Details:**
-> Allows SQL Injection by placing untrusted code
+> Allows SQL Injection by placing untrusted code executing a query on the backend, for the POC all classes are deleted without any authentication
 
 ![image](https://github.com/smurf-reigz/security/assets/48426940/b74a2c69-b612-4b7d-a61d-04e2320e2173)
 
@@ -48,7 +48,7 @@ Connection: close
 id=1337'+or+1=1;--+
 ```
 
-DELETES all classes without authentication.
+> DELETES all classes without authentication.
 
 ![image](https://github.com/smurf-reigz/security/assets/48426940/49ac0660-57e5-4cb0-9c4c-288b215d4ccd)
 

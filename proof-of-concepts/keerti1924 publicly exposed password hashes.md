@@ -6,7 +6,9 @@
 
 **Affected Site Page**: /login.php<br/>
 **Affected Code**: <https://github.com/keerti1924/PHP-MYSQL-User-Login-System/blob/main/login.sql> <br/>
-CWE-540: Inclusion of Sensitive Information in Source Code
+
+**Related CWE**
+[CWE-540: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/540.html)
 
 ## **Details:**
 Exposed Login Credentials containing username, email, and passwords on the GitHub Page (hashes redacted by me for responsible disclosure).

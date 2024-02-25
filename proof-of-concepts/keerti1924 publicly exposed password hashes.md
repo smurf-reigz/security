@@ -9,15 +9,15 @@
 CWE-540: Inclusion of Sensitive Information in Source Code
 
 ## **Details:**
-Exposed Login Credentails on GitHub Page
+Exposed Login Credentails on GitHub Page (hashes redacted by me for responsible disclosure)
 
 ```SQL 
 INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'Ajay Kumar', 'ajay@gmail.com', '12345'),
-(2, 'Amit', 'amit@gmail.com', '1234'),
-(3, 'Keerti Panwar', 'keerti@gmail.com', '$2y$10$g.xv9BS7DZbZ0KT/.fkGouuD8duIUWY2lDntZ7ZXDDUW6h09ZDiqe'),
-(4, 'Ankita', 'ankita@gmail.com', '$2y$10$ZuWPf98dGPFogVM8MoKGxOVZ4v1mXD.WrJQ7rwfvdYLWMpyEyRhtK'),
-(5, 'Keerti Panwar', 'keerti1234@gmail.com', '$2y$10$PL6oQH71xCh3F3BALBuVYu6SLn2AVQ41o.i5vi2LosRIWEh1H.0Zi');
+(1, 'Ajay Kumar', 'ajay@gmail.com', '12***'),
+(2, 'Amit', 'amit@gmail.com', '12**'),
+(3, 'Keerti Panwar', 'keerti@gmail.com', '$2y$10$g******************lDntZ7ZXDD*********'),
+(4, 'Ankita', 'ankita@gmail.com', '$2y$10$ZuW****************************pyEyRhtK'),
+(5, 'Keerti Panwar', 'keerti1234@gmail.com', '$2y$10$PL6o************************osRIWEh1H.0Zi');
 ```
 
 ## **Vulnerability Impact:**

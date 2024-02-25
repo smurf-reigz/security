@@ -5,7 +5,7 @@
 **Affected Version**: keerti1924/PHP-MYSQL-User-Login-System 1.0
 
 **Affected Site Page**: *<br/>
-**Affected Endpoint**: <https://github.com/keerti1924/PHP-MYSQL-User-Login-System/blob/main/login.sql> <br/>
+**Affected Code**: <https://github.com/keerti1924/PHP-MYSQL-User-Login-System/blob/main/login.sql> <br/>
 CWE-540: Inclusion of Sensitive Information in Source Code
 
 ## **Details:**

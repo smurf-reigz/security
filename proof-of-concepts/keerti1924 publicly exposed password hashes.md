@@ -9,7 +9,7 @@
 CWE-540: Inclusion of Sensitive Information in Source Code
 
 ## **Details:**
-Exposed Login Credentails containing username, email, and passwords on the GitHub Page (hashes redacted by me for responsible disclosure).
+Exposed Login Credentials containing username, email, and passwords on the GitHub Page (hashes redacted by me for responsible disclosure).
 
 ```SQL 
 INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES

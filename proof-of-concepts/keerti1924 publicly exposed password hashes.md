@@ -4,7 +4,7 @@
 > Reigz Macolor (https://github.com/reigz/)<br/>
 
 **Tested On**:
-> PHP-MYSQL-User-Login-System 1.0 <https://github.com/keerti1924/PHP-MYSQL-User-Login-System><br/>
+> [PHP-MYSQL-User-Login-System 1.0](https://github.com/keerti1924/PHP-MYSQL-User-Login-System) <br/>
 
 **Affected Version**:
 > keerti1924/PHP-MYSQL-User-Login-System 1.0

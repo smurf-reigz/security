@@ -33,7 +33,7 @@ public function delete_student(){
 > [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)
 
 ## **Details:**
-> Allows SQL Injection by placing untrusted code executing a query on the backend, for the POC all classes are deleted without any authentication
+> Allows SQL Injection by placing untrusted code executing a query on the backend, for the POC all students are deleted without any authentication
 
 ![image](https://github.com/smurf-reigz/security/assets/48426940/c58f0ecd-3d7c-48e6-a54f-90928c33a41e)
 

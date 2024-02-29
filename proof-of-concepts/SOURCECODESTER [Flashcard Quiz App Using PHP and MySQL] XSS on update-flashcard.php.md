@@ -15,7 +15,7 @@
 **Affected Code**: 
 > </update-flashcard.php> <br/>
 
-There is not input sanitization present when updating flashcards, making the web application vulnerable to XSS.
+There is no input sanitization present when updating flashcards, making the web application vulnerable to XSS.
 
 ```php
 <?php

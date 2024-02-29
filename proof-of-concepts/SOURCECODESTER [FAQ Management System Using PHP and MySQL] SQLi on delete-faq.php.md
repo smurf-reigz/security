@@ -13,12 +13,12 @@
 > /faq-management-system/endpoint/delete-faq.php<br/>
 
 **Affected Code**: 
-> </delete-faq.php [function delete_class()]> <br/>
+> </delete-faq.php> <br/>
+
+Even if there's an attempt to use prepared statements, the code actually recieves the user input via `faq` parameter and writes into `$query`. 
 
 ```php
-<?php
-include ('../conn/conn.php');
-
+...
 if (isset($_GET['faq'])) {
     $faq = $_GET['faq'];
 
@@ -29,29 +29,7 @@ if (isset($_GET['faq'])) {
         $stmt = $conn->prepare($query);
 
         $query_execute = $stmt->execute();
-
-        if ($query_execute) {
-            echo "
-                <script>
-                    alert('FAQ deleted successfully!');
-                    window.location.href = 'http://localhost/faq-management-system/';
-                </script>
-            ";
-        } else {
-            echo "
-                <script>
-                    alert('Failed to delete faq!');
-                    window.location.href = 'http://localhost/faq-management-system/';
-                </script>
-            ";
-        }
-
-    } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
-    }
-}
-
-?>
+...
 ```
 
 **Related CWE:**

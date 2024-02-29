@@ -4,7 +4,7 @@
 > Reigz Macolor (https://github.com/reigz/)<br/>
 
 **Tested On**:
-> [Flashcard Quiz App Using PHP and MySQL 1.0](https://www.sourcecodester.com/php/17175/faq-management-system-using-php-and-mysql-source-code.html) <br/>
+> [Flashcard Quiz App Using PHP and MySQL 1.0](https://www.sourcecodester.com/php/17160/flashcard-quiz-app-using-php-and-mysql-source-code.html) <br/>
 
 **Affected Version**:
 > Flashcard Quiz App Using PHP and MySQL 1.0
